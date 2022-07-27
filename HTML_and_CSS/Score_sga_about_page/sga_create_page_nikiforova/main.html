@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Best Python practices for Data Scientists</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="header">
+            <h1>Best Python practices for Data Scientists</h1>
+            <h3>Let’s see some industry standards for production-level code.</h3>
+            <p>
+                Here lies the link to the original story.
+                <a href="https://towardsdatascience.com/best-python-practices-for-data-scientists-11056edda8c7">Check it out
+                </a>
+            </p>
+        </div>
+        <div class="main-content">
+            <div class="paragraph">
+                <p>Most of the code that data scientist’s write to productionize a model doesn’t follow industry standards like PEP8. <abbr title="Python Enhancement Proposal">PEP</abbr> is a document that describes new features proposed for Python and documents aspects of Python, like design and style, for the community. Every feature we see in python, it is first proposed and then reviewed by members who are contributing to the development of python (these are developers from Google, Microsoft and other big MNC’s).
+                <br><br> But why do we need to follow these guidelines?</p>
+
+                <q>As <cite>Guido van Rossum</cite> (founder of Python) said, “Code is read much more often than it is written.” You may spend a few minutes, or a whole day, writing a piece of code to process user authentication. Once you’ve written it, you’re never going to write it again. But you’ll definitely have to read it again. That piece of code might remain part of a project you’re working on. Every time you go back to that file, you’ll have to remember what that code does and why you wrote it, so readability matters.</q>
+            </div>
+            <div class="table-content">
+                <h4>Summury of practices</h4>
+                <table>
+                    <caption>Practices and their description</caption>
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Description</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th><a href="#naming_style">Naming style</a></th>
+                            <th>Follow the rules for naming global variables, classes, protected methods, and so on.</th>
+                        </tr>
+                        <tr>
+                            <th><a href="#indentation">Indentation</a></th>
+                            <th>Use 4 spaces — never tabs.</th>
+                        </tr>
+                        <tr>
+                            <th><a href="#imports">Imports</a></th>
+                            <th>Import order is as follows</th>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div>
+                <h4 id="naming_style">Naming style</h4>
+                <h5>More points and examples</h5>
+                <ol>
+                    <li>Variables, functions, methods, packages, modules</li>
+                    <p></p>
+                    <code>lower_case_with_underscores</code>
+                    <p></p>
+                    <li>Classes and Exceptions</li>
+                    <p></p>
+                    <code>CapWords</code>
+                    <p></p>
+                    <li>Protected methods and internal functions</li>
+                    <p></p>
+                    <code>_single_leading_underscore(self, ...)</code>
+                    <p></p>
+                    <li>Private methods</li>
+                    <p></p>
+                    <code>__double_leading_underscore(self, ...)</code>
+                    <p></p>
+                    <li>Constants</li>
+                    <p></p>
+                    <code>ALL_CAPS_WITH_UNDERSCORES</code>
+                    <p></p>
+                    <li>Prefer reverse Notation</li>
+                    <p></p>
+                    <code>elements = ...
+                        <br>active_elements = ...
+                        <br>defunct_elements ...
+                    </code>
+                    <p></p>
+                </ol>
+            </div>
+            <div>
+                <h4 id="indentation">Indentation</h4>
+                <p>Use 4 spaces — never tabs.</p>
+                <img src="python-indentation.png" alt="There should be an example of python indentations">
+            </div>
+            <div>
+                <h4 id="imports">Imports</h4>
+                <p>Import order is as follows</p>
+                <br>
+                <code><pre>1. python inbuilt packages import
+2. third party packages import
+3. local imports</pre></code>
+                <p></p><p></p>
+                <br><br><br><br>
+            </div>
+        </div>
+        <div class="feedback">
+            <form>
+                <label>Was this information helpful to you?<br><br></label>
+                <input type="radio" id="positive_ans" name="is_helpful" value="Yes">
+                <label for="positive_ans">Yes :)</label><br>
+                <input type="radio" id="negative_ans" name="is_helpful" value="No">
+                <label for="negative_ans">No :(</label><br><br><br>
+                <input type="text" value="Share your expended experience here" class="text-field__input"><br><br>
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+    </body>
+    <footer>
+        <div>
+            <address>
+                20 Myasnitskaya ulitsa (metro stations ‘Lubyanka’ and ‘Kitay-Gorod’),<br> Moscow 101000 Russia.
+            </address>
+        </div>
+    </footer>
+</html>
